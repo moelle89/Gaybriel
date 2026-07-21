@@ -1,0 +1,6 @@
+{
+  "name": "Gaybriel - Official Website",
+  "description": "Official empowerment and lifestyle platform by Gaybriel, helping you overcome judgment and live authentically.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

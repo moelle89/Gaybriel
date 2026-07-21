@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-handwritten: "Caveat", cursive;
+
+  /* Sleek Interface Theme: Sand & Cream backgrounds */
+  --color-sand-50: #FDFBF7;
+  --color-sand-100: #FAF7F2;
+  --color-sand-200: #EFECE6;
+
+  /* Sleek Interface Theme: Portuguese Yellow/Gold (#FFD93D) */
+  --color-portuguese-yellow-50: #FFFDF5;
+  --color-portuguese-yellow-100: #FEF9E0;
+  --color-portuguese-yellow-200: #FFF2B2;
+  --color-portuguese-yellow-400: #FFE566;
+  --color-portuguese-yellow-500: #FFD93D;
+  --color-portuguese-yellow-600: #E6BE1E;
+
+  /* Sleek Interface Theme: Ocean Blue/Cyan (#00A8CC) */
+  --color-ocean-blue-50: #F5FDFF;
+  --color-ocean-blue-100: #E0FAFF;
+  --color-ocean-blue-200: #B3F2FE;
+  --color-ocean-blue-500: #00A8CC;
+  --color-ocean-blue-600: #008CAE;
+  --color-ocean-blue-700: #00728F;
+  --color-ocean-blue-800: #00586F;
+  --color-ocean-blue-900: #003D4E;
+
+  /* Pride Soft Gradients & Accents mapped to new theme */
+  --bg-pride-soft: linear-gradient(135deg, rgba(254, 249, 224, 0.4) 0%, rgba(224, 250, 255, 0.4) 100%);
+  --bg-pride-vibrant: linear-gradient(135deg, #FFD93D 0%, #10b981 33%, #00A8CC 66%, #8b5cf6 100%);
+  --bg-coastal-gradient: linear-gradient(to right, #FFD93D, #00A8CC);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(2, 132, 199, 0.2);
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 132, 199, 0.4);
+}
+
